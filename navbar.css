@@ -83,8 +83,9 @@ header {
     position: relative;
     transition: color 0.3s ease;
     display: inline-block;
-    color: #000; /* Black text color for menu items */
-    font-size: 1.5em; /* Increase font size for menu items */
+    color: #fff; /* White text color for menu items */
+    font-size: 1.9em; /* Increase font size for menu items by 4 pixels */
+    -webkit-text-stroke: 1px #000; /* 1px black stroke */
 }
 
 .nav-item a::before {
@@ -105,19 +106,9 @@ header {
 }
 
 .nav-item a:hover {
-    color: #333; /* Darker hover effect */
+    color: #ddd; /* Slightly darker hover effect */
     animation: hoverBounce 2s infinite;
 }
-
-@keyframes hoverBounce {
-    0%, 100% {
-        color: lightblue;
-    }
-    50% {
-        color: white;
-    }
-}
-
 
 .nav-item::after {
     content: '';
@@ -135,4 +126,13 @@ header {
 .nav-item:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+@keyframes hoverBounce {
+    0%, 100% {
+        color: lightblue;
+    }
+    50% {
+        color: white;
+    }
 }
