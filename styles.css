@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background: #fff; /* White background for the main menu */
-    color: #000; /* Black text color for the main menu */
+    background: rgba(255, 255, 255, 0.0); /* Transparent background for the main menu */
+    color: #fff; /* White text color for the main menu */
     padding: 20px 0; /* Increase padding for a bigger menu bar */
     position: fixed;
     width: 100%;
@@ -33,11 +33,12 @@ header {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none; /* Remove underline */
-    color: #000; /* Black text color */
+    color: #fff; /* White text color */
+    -webkit-text-stroke: 1px #000; /* 1px black stroke */
 }
 
 .brand-name:hover {
-    color: #333; /* Darker hover effect */
+    color: #ddd; /* Slightly darker hover effect */
 }
 
 .navbar {
@@ -53,7 +54,8 @@ header {
     background: none;
     border: none;
     cursor: pointer;
-    color: #000;
+    color: #fff; /* White text color */
+    -webkit-text-stroke: 1px #000; /* 1px black stroke */
 }
 
 .nav-list {
@@ -73,8 +75,9 @@ header {
     position: relative;
     transition: color 0.3s ease;
     display: inline-block;
-    color: #000; /* Black text color for menu items */
+    color: #fff; /* White text color for menu items */
     font-size: 1.5em; /* Increase font size for menu items */
+    -webkit-text-stroke: 1px #000; /* 1px black stroke */
 }
 
 .nav-item a::before {
@@ -95,7 +98,7 @@ header {
 }
 
 .nav-item a:hover {
-    color: #333; /* Darker hover effect */
+    color: #ddd; /* Slightly darker hover effect */
 }
 
 .nav-item::after {
