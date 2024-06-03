@@ -16,7 +16,7 @@
             <div class="navbar-right">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#about">About</a></li>
-                    <li class="nav-item"><a href="#portfolio">Archive</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
                 </ul>
             </div>
         </nav>
@@ -26,8 +26,8 @@
         <img src="assets/images/imageB1.jpg" alt="About Destiney Meijll" class="about-image">
         <div class="about-overlay">
             <p>Hi there! I'm a passionate game art student currently in my third year of study. I specialize in drawing concept art and creating 3D models, primarily using Blender. I also have experience working with Maya. My creativity is fueled by a love for visual storytelling and bringing imaginative worlds to life.</p>
-            <div class="get-in-touch">
-                <span>Get in touch →</span>
+            <div class="get-in-touch" onclick="copyEmail()">
+                <span id="contact-text">Get in touch →</span>
             </div>
         </div>
     </section>
@@ -54,7 +54,7 @@
             navList.classList.toggle('show');
         }
 
-        document.querySelector('.get-in-touch').addEventListener('click', function() {
+        function copyEmail() {
             var email = 'dezzeltjuh@gmail.com';
             var tempInput = document.createElement('input');
             tempInput.value = email;
@@ -62,8 +62,8 @@
             tempInput.select();
             document.execCommand('copy');
             document.body.removeChild(tempInput);
-            alert('Email address copied to clipboard!');
-        });
+            document.getElementById('contact-text').innerText = 'Mail copied';
+        }
     </script>
 </body>
 </html>
