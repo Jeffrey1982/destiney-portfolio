@@ -30,18 +30,7 @@ header {
 }
 
 .brand-name:hover {
-    animation: rainbow 5s linear infinite, bounce 0.5s alternate infinite;
-}
-
-@keyframes rainbow {
-    0% { color: red; }
-    14% { color: orange; }
-    28% { color: yellow; }
-    42% { color: green; }
-    57% { color: blue; }
-    71% { color: indigo; }
-    85% { color: violet; }
-    100% { color: red; }
+    animation: bounce 0.5s alternate infinite;
 }
 
 @keyframes bounce {
@@ -95,7 +84,7 @@ header {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Rainbow underline */
+    background: lightblue; /* Light blue underline */
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -107,7 +96,6 @@ header {
 
 .nav-item a:hover {
     color: #ddd; /* Slightly darker hover effect */
-    animation: hoverBounce 2s infinite;
 }
 
 .nav-item::after {
@@ -115,7 +103,7 @@ header {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Rainbow hover effect */
+    background: lightblue; /* Light blue hover effect */
     top: 100%;
     left: 0;
     transform: scaleX(0);
@@ -126,13 +114,4 @@ header {
 .nav-item:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-}
-
-@keyframes hoverBounce {
-    0%, 100% {
-        color: lightblue;
-    }
-    50% {
-        color: white;
-    }
 }
