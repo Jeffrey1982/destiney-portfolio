@@ -21,6 +21,22 @@
         function goHome() {
             window.location.href = 'index.html';
         }
+
+        function toggleMenu() {
+            var navList = document.querySelector('.nav-list');
+            navList.classList.toggle('show');
+        }
+
+        function copyEmail() {
+            var email = 'dezzeltjuh@gmail.com';
+            var tempInput = document.createElement('input');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            document.getElementById('contact-text').innerText = 'Mail copied';
+        }
     </script>
 </head>
 <body>
@@ -38,7 +54,7 @@
             </div>
         </nav>
     </header>
-    
+
     <div id="dynamic-content">
         <section id="about" class="about-section">
             <img src="assets/images/imageB1.jpg" alt="About Destiney Meijll" class="about-image">
@@ -50,7 +66,7 @@
             </div>
         </section>
     </div>
-    
+
     <section id="portfolio">
         <h1>Portfolio</h1>
         <div class="portfolio-item">
@@ -66,23 +82,5 @@
             <p>A Card made for the table of Husker of Hazbin Hotel</p>
         </div>
     </section>
-
-    <script>
-        function toggleMenu() {
-            var navList = document.querySelector('.nav-list');
-            navList.classList.toggle('show');
-        }
-
-        function copyEmail() {
-            var email = 'dezzeltjuh@gmail.com';
-            var tempInput = document.createElement('input');
-            tempInput.value = email;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempInput);
-            document.getElementById('contact-text').innerText = 'Mail copied';
-        }
-    </script>
 </body>
 </html>
