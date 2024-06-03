@@ -76,7 +76,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow to make it look like a bubble */
     position: absolute; /* Ensure it overlays the image */
     top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    left: 0%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Center the bubble */
 }
 
