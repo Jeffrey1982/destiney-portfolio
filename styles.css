@@ -105,11 +105,13 @@ header {
 .about-overlay h1 {
     margin-bottom: 20px;
     font-size: 3em; /* Larger font size for heading */
+    text-align: left; /* Align heading to the left */
 }
 
 .about-overlay p {
     font-size: 1.2em;
     line-height: 1.6;
+    text-align: left; /* Ensure paragraph text is left-aligned */
 }
 
 section {
