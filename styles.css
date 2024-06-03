@@ -51,7 +51,7 @@ header {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #000; /* Black underline for menu items */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Rainbow underline */
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -70,7 +70,7 @@ header {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: #000; /* Black hover effect */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Rainbow hover effect */
     top: 100%;
     left: 0;
     transform: scaleX(0);
@@ -89,7 +89,8 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 20px; /* Add some padding to the left */
 }
 
 .about-overlay {
@@ -99,7 +100,6 @@ header {
     border-radius: 10px;
     text-align: left; /* Align text to the left */
     max-width: 800px;
-    margin-left: 20px; /* Add some margin to the left */
 }
 
 .about-overlay h1 {
