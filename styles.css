@@ -130,36 +130,6 @@ h1 {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    width: 100%;
-    max-width: 400px;
-    background: #333; /* Darker background for inputs */
-    color: #fff; /* White text for inputs */
-    border: none;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background: #fff; /* White background for button */
-    color: #000; /* Black text for button */
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background: #ddd; /* Lighter background on hover */
-}
-
 .portfolio-item {
     background: #333; /* Darker background for portfolio items */
     padding: 20px;
@@ -170,9 +140,24 @@ form button:hover {
     text-align: center;
 }
 
-.portfolio-item img {
+.portfolio-item img, .portfolio-item video {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
 }
 
