@@ -24,6 +24,10 @@ header {
     margin-left: 20px; /* Margin for left alignment */
 }
 
+.navbar-right {
+    margin-right: 20px; /* Margin for right alignment */
+}
+
 .brand-name {
     font-size: 1.5em;
     font-weight: bold;
@@ -31,8 +35,9 @@ header {
 
 .navbar {
     display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-list {
