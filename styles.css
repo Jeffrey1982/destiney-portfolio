@@ -16,7 +16,17 @@ header {
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: flex-end; /* Align the content to the right */
+    justify-content: space-between; /* Space between brand name and nav items */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-left {
+    margin-left: 20px; /* Margin for left alignment */
+}
+
+.brand-name {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 .navbar {
