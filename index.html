@@ -17,13 +17,17 @@
                     document.querySelector('#dynamic-content').innerHTML = data;
                 });
         }
+
+        function goHome() {
+            window.location.href = 'index.html';
+        }
     </script>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar-left">
-                <a href="index.html" class="brand-name">Destiney Meijll</a>
+                <span class="brand-name" onclick="goHome()">Destiney Meijll</span>
             </div>
             <button class="burger-menu" onclick="toggleMenu()">☰</button>
             <div class="navbar-right">
