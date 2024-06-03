@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.0); /* Transparent background for the main menu */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the main menu */
     color: #fff; /* White text color for the main menu */
     padding: 20px 0; /* Increase padding for a bigger menu bar */
     position: fixed;
@@ -121,7 +121,7 @@ header {
 
 .about-section {
     position: relative;
-    min-height: 100vh;
+    height: 100vh; /* Full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
