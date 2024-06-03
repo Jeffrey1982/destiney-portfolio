@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000; /* Black background for the whole site */
+    color: #fff; /* White text color */
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 100px; /* Adjust to accommodate larger menu bar */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#portfolio {
+    background: #000; /* Black background for sections */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+.portfolio-item {
+    background: #333; /* Darker background for portfolio items */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+    text-align: center;
+}
+
+.portfolio-item img, .portfolio-item video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.portfolio-item h2 {
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    margin-top: 10px;
+    color: #ccc; /* Lighter text for description */
+}
+
+/* Additional Styles for About Page Columns */
+.about-content {
+    padding: 20px;
+    background-color: #000; /* Black background for the about section */
+    color: #fff; /* White text color */
+}
+
+.about-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        position: absolute;
+        top: 60px; /* Adjust according to header height */
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-overlay {
+        max-width: 90%;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item a {
+        font-size: 1.2em;
+    }
+}
