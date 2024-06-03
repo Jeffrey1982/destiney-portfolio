@@ -83,7 +83,7 @@ header {
 }
 
 .nav-item {
-    margin: 0 20px; /* Increase margin for more spacing */
+    margin: 0 30px; /* Increase margin for more spacing (20px more than before) */
     position: relative;
 }
 
