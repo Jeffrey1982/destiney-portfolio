@@ -96,13 +96,14 @@ header {
     color: #fff; /* White text */
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
+    text-align: left; /* Align text to the left */
     max-width: 800px;
+    margin-left: 20px; /* Add some margin to the left */
 }
 
 .about-overlay h1 {
     margin-bottom: 20px;
-    font-size: 2.5em;
+    font-size: 3em; /* Larger font size for heading */
 }
 
 .about-overlay p {
