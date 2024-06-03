@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000; /* Black background for the whole site */
+    color: #fff; /* White text color */
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #fff; /* White background for the main menu */
+    color: #000; /* Black text color for the main menu */
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -40,9 +40,7 @@ header {
     position: relative;
     transition: color 0.3s ease;
     display: inline-block;
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #000; /* Black text color for menu items */
 }
 
 .nav-item a::before {
@@ -52,7 +50,7 @@ header {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background-color: #000; /* Black underline for menu items */
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -63,7 +61,7 @@ header {
 }
 
 .nav-item a:hover {
-    color: #ddd;
+    color: #333; /* Darker hover effect */
 }
 
 .nav-item::after {
@@ -71,7 +69,7 @@ header {
     position: absolute;
     width: 100%;
     height: 3px;
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    background: #000; /* Black hover effect */
     top: 100%;
     left: 0;
     transform: scaleX(0);
@@ -94,8 +92,8 @@ header {
 }
 
 .about-overlay {
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker overlay */
+    color: #fff; /* White text */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -123,12 +121,12 @@ h1 {
 }
 
 #portfolio, #contact {
-    background: #fff;
+    background: #000; /* Black background for sections */
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
     max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
 }
 
 form {
@@ -142,27 +140,32 @@ form input, form textarea {
     padding: 10px;
     width: 100%;
     max-width: 400px;
+    background: #333; /* Darker background for inputs */
+    color: #fff; /* White text for inputs */
+    border: none;
+    border-radius: 5px;
 }
 
 form button {
     padding: 10px 20px;
-    background: #333;
-    color: #fff;
+    background: #fff; /* White background for button */
+    color: #000; /* Black text for button */
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 form button:hover {
-    background: #555;
+    background: #ddd; /* Lighter background on hover */
 }
 
 .portfolio-item {
-    background: #fff;
+    background: #333; /* Darker background for portfolio items */
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
     max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
     text-align: center;
 }
 
@@ -178,7 +181,7 @@ form button:hover {
 
 .portfolio-item p {
     margin-top: 10px;
-    color: #666;
+    color: #ccc; /* Lighter text for description */
 }
 
 @media (max-width: 768px) {
