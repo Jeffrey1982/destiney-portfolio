@@ -15,11 +15,12 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: flex-end; /* Align the content to the right */
 }
 
 .navbar {
     display: flex;
-    justify-content: center;
 }
 
 .nav-list {
