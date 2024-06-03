@@ -12,11 +12,14 @@
             <div class="navbar-left">
                 <span class="brand-name">Destiney Meijll</span>
             </div>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
+            <button class="burger-menu" onclick="toggleMenu()">☰</button>
+            <div class="navbar-right">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
@@ -27,19 +30,12 @@
         </div>
     </section>
     
-    
-    <section id="about" class="full-width-image">
-        <div class="about-overlay">
-            <h1>About Destiney Meijll</h1>
-            <p>Hi there! I'm a passionate game art student currently in my third year of study. I specialize in drawing concept art and creating 3D models, primarily using Blender. I also have experience working with Maya. My creativity is fueled by a love for visual storytelling and bringing imaginative worlds to life.</p>
-        </div>
-    </section>
     <section id="portfolio">
         <h1>Portfolio</h1>
         <div class="portfolio-item">
-            <img src="assets/images/image1.jpg" Adam's horns">
+            <img src="assets/images/image1.jpg" alt="Project 1">
             <h2>Project 1</h2>
-            <p>From hazbin hotel, adam's horns and halo</p>
+            <p>From hazbin hotel, Adam's horns and halo</p>
         </div>
         <div class="portfolio-item">
             <div class="video-container">
@@ -59,6 +55,11 @@
             <button type="submit">Send</button>
         </form>
     </section>
-    <script src="scripts.js"></script>
+    <script>
+        function toggleMenu() {
+            var navList = document.querySelector('.nav-list');
+            navList.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
