@@ -83,7 +83,7 @@ header {
 }
 
 .nav-item {
-    margin: 0 30px; /* Increase margin for more spacing (20px more than before) */
+    margin: 0 70px; /* Increase margin for more spacing (40px more than before) */
     position: relative;
 }
 
@@ -93,7 +93,7 @@ header {
     transition: color 0.3s ease;
     display: inline-block;
     color: #fff; /* White text color for menu items */
-    font-size: 1.5em; /* Increase font size for menu items */
+    font-size: 1.9em; /* Increase font size for menu items by 4 pixels */
     -webkit-text-stroke: 1px #000; /* 1px black stroke */
 }
 
