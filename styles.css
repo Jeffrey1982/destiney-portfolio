@@ -35,13 +35,11 @@ header {
     text-decoration: none; /* Remove underline */
     color: #fff; /* White text color */
     -webkit-text-stroke: 1px #000; /* 1px black stroke */
-    transition: transform 0.3s ease;
-    animation: rainbow 5s linear infinite, bounce 0.5s alternate infinite;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .brand-name:hover {
-    transform: scale(1.2); /* Increase size on hover */
-    animation-play-state: paused; /* Pause animation on hover */
+    animation: rainbow 5s linear infinite, bounce 0.5s alternate infinite;
 }
 
 @keyframes rainbow {
