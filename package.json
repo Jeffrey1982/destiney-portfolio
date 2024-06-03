@@ -1,0 +1,19 @@
+{
+  "name": "destiney-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx cssnano styles.css styles.min.css",
+    "build:js": "npx uglify-js scripts.js -o scripts.min.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cssnano": "^7.0.1",
+    "cssnano-cli": "^1.0.5",
+    "uglify-js": "^3.17.4"
+  }
+}
