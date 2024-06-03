@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: rgba(255, 255, 255, 0.0); /* Transparent background for the main menu */
+    background: rgba(0, 0, 0, 0.0); /* Transparent background for the main menu */
     color: #fff; /* White text color for the main menu */
     padding: 20px 0; /* Increase padding for a bigger menu bar */
     position: fixed;
