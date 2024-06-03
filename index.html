@@ -40,23 +40,12 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
-            loadMoreContent();
             window.addEventListener('scroll', () => {
                 if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                    loadMoreContent();
+                    window.scrollTo(0, 0);
                 }
             });
         });
-
-        function loadMoreContent() {
-            const content = `
-                <section class="additional-content">
-                    <h1>More Content</h1>
-                    <p>This is additional content loaded dynamically.</p>
-                </section>
-            `;
-            document.querySelector('#dynamic-content').insertAdjacentHTML('beforeend', content);
-        }
     </script>
 </head>
 <body>
