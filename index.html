@@ -5,54 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destiney Meijll Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<script>
-    document.addEventListener('contextmenu', function(event) {
-        event.preventDefault();
-    });
-</script>
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
 
+        function loadSection(sectionId) {
+            fetch(sectionId + '.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector('#dynamic-content').innerHTML = data;
+                });
+        }
+    </script>
+</head>
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar-left">
-                <span class="brand-name">Destiney Meijll</span>
+                <a href="index.html" class="brand-name">Destiney Meijll</a>
             </div>
             <button class="burger-menu" onclick="toggleMenu()">☰</button>
             <div class="navbar-right">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="javascript:void(0);" onclick="loadSection('about')">About</a></li>
                     <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     
-    <section id="about" class="about-section">
-        <img src="assets/images/imageB1.jpg" alt="About Destiney Meijll" class="about-image">
-        <div class="about-overlay">
-            <p>Hi there! I'm a passionate game art student currently in my third year of study. I specialize in drawing concept art and creating 3D models, primarily using Blender. I also have experience working with Maya. My creativity is fueled by a love for visual storytelling and bringing imaginative worlds to life.</p>
-            <div class="get-in-touch" onclick="copyEmail()">
-                <span id="contact-text">Get in touch →</span>
-            </div>
-        </div>
-    </section>
-    
-    <section id="portfolio">
-        <h1>Portfolio</h1>
-        <div class="portfolio-item">
-            <img src="assets/images/image1.jpg" alt="Project 1">
-            <h2>Adam's horns</h2>
-            <p>From hazbin hotel, Adam's horns and halo</p>
-        </div>
-        <div class="portfolio-item">
-            <div class="video-container">
-                <video src="assets/videos/video1.mp4" muted></video>
-            </div>
-            <h2>Playing Card</h2>
-            <p>A Card made for the table of Husker of Hazbin Hotel</p>
-        </div>
-    </section>
+    <div id="dynamic-content">
+        <!-- Dynamic content will be loaded here -->
+    </div>
     
     <script>
         function toggleMenu() {
