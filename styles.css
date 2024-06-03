@@ -229,10 +229,9 @@ form button:hover {
 .portfolio-item img, .portfolio-item video {
     max-width: 100%;
     height: auto;
-    border-radius: 8pxLet's complete the CSS to include the responsive burger menu functionality:
+    border-radius: 8px;
+}
 
-### Updated CSS (Continued)
-```css
 .video-container {
     position: relative;
     overflow: hidden;
