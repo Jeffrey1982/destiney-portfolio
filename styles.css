@@ -247,9 +247,35 @@ form button:hover {
     color: #ccc; /* Lighter text for description */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .brand-name {
+        margin-bottom: 10px;
+    }
+
     .nav-list {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-overlay {
+        max-width: 90%;
     }
 
     form input, form textarea {
@@ -258,5 +284,23 @@ form button:hover {
 
     .portfolio-item {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item a {
+        font-size: 1.2em;
+    }
+
+    .contact-container h1 {
+        font-size: 2em;
+    }
+
+    .contact-container p {
+        font-size: 1em;
+    }
+
+    form label {
+        font-size: 1em;
     }
 }
