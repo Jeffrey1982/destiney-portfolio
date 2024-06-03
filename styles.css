@@ -142,6 +142,13 @@ header {
     text-align: left; /* Ensure paragraph text is left-aligned */
 }
 
+.get-in-touch {
+    margin-top: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5em;
+}
+
 section {
     padding: 60px 20px;
     margin-top: 100px; /* Adjust to accommodate larger menu bar */
@@ -152,68 +159,13 @@ h1 {
     margin-bottom: 20px;
 }
 
-#portfolio, #contact {
+#portfolio {
     background: #000; /* Black background for sections */
     padding: 20px;
     margin: 20px auto;
     border-radius: 8px;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
-}
-
-.contact-container {
-    text-align: center;
-    background: #333;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
-}
-
-.contact-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.contact-container p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    color: #000;
-}
-
-form button {
-    padding: 10px 20px;
-    background: #fff; /* White background for button */
-    color: #000; /* Black text for button */
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1.2em;
-}
-
-form button:hover {
-    background: #ddd; /* Lighter background on hover */
 }
 
 .portfolio-item {
