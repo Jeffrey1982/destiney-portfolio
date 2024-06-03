@@ -36,6 +36,10 @@ header {
     color: #000; /* Black text color */
 }
 
+.brand-name:hover {
+    color: #333; /* Darker hover effect */
+}
+
 .navbar {
     display: flex;
     width: 100%;
@@ -211,6 +215,36 @@ h1 {
     color: #ccc; /* Lighter text for description */
 }
 
+/* Additional Styles for About Page Columns */
+.about-content {
+    padding: 20px;
+    background-color: #000; /* Black background for the about section */
+    color: #fff; /* White text color */
+}
+
+.about-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.column p {
+    margin-bottom: 10px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .burger-menu {
@@ -249,12 +283,13 @@ h1 {
         max-width: 90%;
     }
 
-    form input, form textarea {
-        max-width: 100%;
+    .columns {
+        flex-direction: column;
     }
 
-    .portfolio-item {
-        max-width: 100%;
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
