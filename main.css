@@ -62,14 +62,18 @@ h1 {
 }
 
 .about-overlay {
-    background: rgba(0, 0, 0, 0.7); /* Slightly darker overlay */
-    color: #fff; /* White text */
     padding: 20px;
     border-radius: 10px;
     text-align: left; /* Align text to the left */
     max-width: 800px;
     position: relative;
     z-index: 1;
+}
+
+.bubble {
+    background: rgba(255, 255, 255, 0.9); /* White background for bubble */
+    color: #000; /* Black text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow to make it look like a bubble */
 }
 
 .about-overlay p {
@@ -81,7 +85,7 @@ h1 {
 .get-in-touch {
     margin-top: 20px;
     cursor: pointer;
-    color: #fff;
+    color: #000; /* Black text */
     font-size: 1.5em;
 }
 
