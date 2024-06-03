@@ -7,6 +7,25 @@ body {
     color: #fff; /* White text color */
 }
 
+/* Rainbow Scrollbar */
+body::-webkit-scrollbar {
+    width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000; /* Black background for scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 10px;
+    border: 3px solid #000; /* Black border around thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);
+}
+
 section {
     padding: 60px 20px;
     margin-top: 100px; /* Adjust to accommodate larger menu bar */
