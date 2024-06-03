@@ -35,10 +35,29 @@ header {
     text-decoration: none; /* Remove underline */
     color: #fff; /* White text color */
     -webkit-text-stroke: 1px #000; /* 1px black stroke */
+    transition: transform 0.3s ease;
+    animation: rainbow 5s linear infinite, bounce 0.5s alternate infinite;
 }
 
 .brand-name:hover {
-    color: #ddd; /* Slightly darker hover effect */
+    transform: scale(1.2); /* Increase size on hover */
+    animation-play-state: paused; /* Pause animation on hover */
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+@keyframes bounce {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
 }
 
 .navbar {
